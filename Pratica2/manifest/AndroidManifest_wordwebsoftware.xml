@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" android:installLocation="auto" package="com.wordwebsoftware.android.wordweb" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:backupAgent="com.wordwebsoftware.android.wordweb.util.BackupAgent" android:fullBackupContent="@xml/backup_rules" android:fullBackupOnly="true" android:icon="@mipmap/app_icon" android:label="@string/app_name" android:usesCleartextTraffic="true">
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIjQ63H7imi_hl00vCGZmRB8U_UycXb_UV3q7SMg"/>
+        <provider android:authorities="com.wordwebsoftware.android.wordweb.provider.WordWeb" android:exported="false" android:name="com.wordwebsoftware.android.wordweb.provider.WordWebProvider"/>
+        <provider android:authorities="com.wordwebsoftware.android.wordweb.provider.DictionaryProvider" android:exported="true" android:name="com.wordwebsoftware.android.wordweb.provider.DictionaryProvider"/>
+        <receiver android:icon="@mipmap/app_icon" android:label="@string/widget_name_random_common_word" android:name="com.wordwebsoftware.android.wordweb.provider.WidgetProviderRandomCommonWord">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ACTION_AUTO_UPDATE_RANDOM_COMMON"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_random_common_word"/>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.wordwebsoftware.android.wordweb.activity.WordWebActivity" android:theme="@style/WordWeb.Startup">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:label="@string/intent_share_search_label">
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/intent_share_search_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.wordwebonline.com" android:pathPrefix="/en" android:scheme="https"/>
+                <data android:host="search" android:pathPattern="/.*" android:scheme="wordweb"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <uses-library android:name="com.sec.android.app.multiwindow" android:required="false"/>
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" android:value="632dip"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H" android:value="598dip"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W" android:value="632dip"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:value="598dip"/>
+        <receiver android:icon="@mipmap/app_icon" android:label="@string/widget_name_search" android:name="com.wordwebsoftware.android.wordweb.provider.WidgetProviderSearch">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_search"/>
+        </receiver>
+        <receiver android:icon="@mipmap/app_icon" android:label="@string/widget_name_random_word" android:name="com.wordwebsoftware.android.wordweb.provider.WidgetProviderRandomWord">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ACTION_AUTO_UPDATE_RANDOM"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_random_word"/>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wordwebsoftware.android.wordweb.activity.HomeActivity" android:theme="@style/WordWeb.AppTheme">
+            <intent-filter>
+                <action android:name="com.wordwebsoftware.android.wordweb.activity.HomeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wordwebsoftware.android.wordweb.activity.HomeActivityTablet" android:theme="@style/WordWeb.AppTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.wordwebsoftware.android.wordweb.activity.HomeActivityTablet"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wordwebsoftware.android.wordweb.activity.BookmarkRecentBaseActivity" android:theme="@style/WordWeb.AppTheme">
+            <intent-filter>
+                <action android:name="com.wordwebsoftware.android.wordweb.activity.BookmarkRecentBaseActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wordwebsoftware.android.wordweb.activity.SearchOptionsActivity" android:theme="@style/WordWeb.AppTheme">
+            <intent-filter>
+                <action android:name="com.wordwebsoftware.android.wordweb.activity.SearchOptionsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wordwebsoftware.android.wordweb.activity.SettingsActivity" android:theme="@style/WordWeb.AppTheme">
+            <intent-filter>
+                <action android:name="com.wordwebsoftware.android.wordweb.activity.SettingsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wordwebsoftware.android.wordweb.activity.EditReferencesActivity" android:theme="@style/WordWeb.DialogStyle">
+            <intent-filter>
+                <action android:name="com.wordwebsoftware.android.wordweb.activity.EditReferencesActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wordwebsoftware.android.wordweb.activity.NewReferenceActivity" android:theme="@style/WordWeb.DialogStyle">
+            <intent-filter>
+                <action android:name="com.wordwebsoftware.android.wordweb.activity.NewReferenceActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wordwebsoftware.android.wordweb.activity.WebViewActivity" android:theme="@style/WordWeb.AppTheme">
+            <intent-filter>
+                <action android:name="com.wordwebsoftware.android.wordweb.activity.WebViewActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wordwebsoftware.android.wordweb.activity.DescriptionActivity" android:theme="@style/WordWeb.AppTheme">
+            <intent-filter>
+                <action android:name="com.wordwebsoftware.android.wordweb.activity.DescriptionActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wordwebsoftware.android.wordweb.activity.HelpActivity" android:theme="@style/WordWeb.AppTheme">
+            <intent-filter>
+                <action android:name="com.wordwebsoftware.android.wordweb.activity.HelpActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="7"/>
+    </application>
+</manifest>
