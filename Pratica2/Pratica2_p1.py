@@ -19,7 +19,6 @@ def read_permissions(manifest):
                 permissions.append(permission[-2] + "." + permission_name)
     return permissions
 
-
 def read_manifests(dir):
     apps = {}
     _, _, filenames = next(walk(dir))
@@ -32,6 +31,13 @@ def read_manifests(dir):
     return apps
 
 
+#identificação das permissões existentes em cada manifesto.
+def get_todas(app, apps):
+    permissoes_app = set(apps[app])
+    permissoes_outros_apps = []
+    return permissoes_app.difference(*permissoes_outros_apps)    
+
+#identificação das permissões existentes em comum em todos os manifestos do diretório.
 def get_intersection(apps):
     intersection = set()
     aux = []
@@ -39,7 +45,7 @@ def get_intersection(apps):
         aux.append(apps[app])
     return list(reduce(set.intersection, [set(item) for item in aux]))
 
-
+#identificação das permissões exclusivas de cada manifestos do diretório.
 def get_difference(app, apps):
     permissoes_app = set(apps[app])
     permissoes_outros_apps = []
@@ -49,14 +55,20 @@ def get_difference(app, apps):
     return permissoes_app.difference(*permissoes_outros_apps)
 
 
+
 # EXECUTAR
 if __name__ == "__main__":
     dir = os.path.join(os.path.abspath(os.getcwd()), "manifest")
     apps = read_manifests(dir)
 
-    print("INTERSECÇÃO:", get_intersection(apps))
+    print("===================Permissões por APK: ===================")
+    for app in apps:
+        todas = get_todas(app, apps)
+        print(app, "=", todas)
 
-    print("\n\nDIFERENÇA: ")
+    print("\n\n===================Permissões únicas por APK ===================: ")
     for app in apps:
         diff = get_difference(app, apps)
         print(app, "=", diff)
+
+    print("\n\n===================Permissões comuns das APKs: =================== \n", get_intersection(apps))
