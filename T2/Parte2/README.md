@@ -26,13 +26,13 @@ Para uso no Google Colab:
 - No segundo bloco de código, carregue arquivos executáveis.
 
 Para uso em ambiente desktop: 
-- Use o arquivo Pratica3.py
-- Certifique-se que os arquivos binários do Windows foram baixados (pasta executaveis). 
+- Use o arquivo t2_Parte2.py.
+- Certifique-se que os arquivos binários do Windows foram baixados (pasta binarios). Os arquivos devem ficar no mesmo diretório do arquivo .py. 
 
 
 <h4> Orientações para execução </h4>
 
 - Execute as partes 3 e 4 do código.
-- O resultado apresentado será similar ao registrado no arquivo: T2_Parte2.ipynb - Demonstração de Resultado.pdf
+- O resultado apresentado será similar ao registrado no arquivo: T2_Parte2.ipynb - Demonstração de Resultado.pdf.
 
 
