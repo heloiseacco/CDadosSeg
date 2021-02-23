@@ -27,7 +27,7 @@ Para uso no Google Colab:
 - No primeiro bloco de código, carregue os arquivos de Manifesto das APKs (pasta manifest do repositório). Crie o diretório "manifests" no Colab e mova os arquivos para ele.
 
 Para uso em ambiente desktop: 
-- Use o arquivo Pratica2_p1.py
+- Use o arquivo t2_Parte1.py
 - Certifique-se que o diretório "manifests" contendo arquivos de Manifesto de APKs foi baixado junto com o projeto. 
 
 
