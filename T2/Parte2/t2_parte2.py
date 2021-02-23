@@ -26,7 +26,7 @@ pe = pefile.PE(file_location)
 dict = {}
 listasecoes = []
 
-chave = 'ftp'                                              
+chave = file_location                                             
 for section in pe.sections:
    if section.IMAGE_SCN_CNT_CODE == True or section.IMAGE_SCN_MEM_EXECUTE ==  True: 
       #rotulo = 'nome do Arquivo Binario'
