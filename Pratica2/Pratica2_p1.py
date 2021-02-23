@@ -3,7 +3,7 @@ from xml.dom import minidom
 from os import walk
 from functools import reduce
 
-
+#leitura dos arquivos manifesto (XML)
 def read_permissions(manifest):
     permissions = []
     xmldoc = minidom.parse(manifest)
@@ -19,6 +19,7 @@ def read_permissions(manifest):
                 permissions.append(permission[-2] + "." + permission_name)
     return permissions
 
+#leitura do diretorio
 def read_manifests(dir):
     apps = {}
     _, _, filenames = next(walk(dir))
@@ -34,8 +35,7 @@ def read_manifests(dir):
 #identificação das permissões existentes em cada manifesto.
 def get_todas(app, apps):
     permissoes_app = set(apps[app])
-    permissoes_outros_apps = []
-    return permissoes_app.difference(*permissoes_outros_apps)    
+    return permissoes_app
 
 #identificação das permissões existentes em comum em todos os manifestos do diretório.
 def get_intersection(apps):
@@ -49,7 +49,7 @@ def get_intersection(apps):
 def get_difference(app, apps):
     permissoes_app = set(apps[app])
     permissoes_outros_apps = []
-    for tmp in apps:
+    for tmp in apps:            
         if app != tmp:
             permissoes_outros_apps.append(apps[tmp])
     return permissoes_app.difference(*permissoes_outros_apps)
