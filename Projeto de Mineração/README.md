@@ -3,37 +3,54 @@
 </h3>
 
 <h4 align="center">
-  Heloise Acco Tives - Matrícula: 202000144019
+  Heloise Acco Tives - Matrícula: 202000144019 <br />
+  Roberta Samistraro Tomigian -   
   <br />
   Projeto de Mineração de Dados
 </h4>
 
-<p>
+<h4>
+1. Origem dos Dados
+</h4>
+
+<p>    
+https://www.unb.ca/cic/datasets/darknet2020.html <br />
+Descrever ........
+</p>
+
+<h4>
+2. Descrição dos tipos de dados
+</h4>
+
+<p>  
+- 85 atributos estruturam a tabela que contém 141.530 registros.
+
+- 5 são textuais e 80 numéricos, conforme apresentado abaixo:
+
     
-    Origem dos dados: https://www.unb.ca/cic/datasets/darknet2020.html
-    Descrever ........
-
 </p>
-<p> Descrição dos tipos de dados (Atributos numéricos, textuais??)
- 
-Os 141.530 registros da tabela estão organizados em 85 atributos, sendo 5 textuais e 80 numéricos. 
 
+<h4>
+3. Objetivo com dataset
+</h4>
+<p> 
 
-Conforme apresentado abaixo:
-
-    
+Descobrir a partir da análise dos valores mínimos e máximos dos pacotes de entrada e saída
 </p>
   
-<p> Objetivo com dataset
-    
-    Descobrir a partir da análise dos valores mínimos e máximos dos pacotes de entrada e saída
+
+<h4>
+4. Maneira de rotulação do dataset
+</h4>
+
+
+<p> 
 </p>
-  
-  
-<p> Maneira de rotulação do dataser
-</p>
-  
-<p> Colunas/atributos a serem mantidos e removidos. Por quê?
+
+<h4>
+5. Colunas/atributos a serem mantidos e removidos. Por quê?
+</h4>
+<p> 
     
     O primeiro grupo de atributos excluídos foram os que se tratavam de resultados estatísticos a partir de dados mínimos e máximos, como por exemplo cálculo de desvio padrão, média e variância. 
     
