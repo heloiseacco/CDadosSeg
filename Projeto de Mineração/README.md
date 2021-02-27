@@ -23,6 +23,7 @@ Descrever ........
 </h4>
 
 <p>  
+    
 - 85 atributos estruturam a tabela que contém 141.530 registros.
 
 - 5 são textuais e 80 numéricos, conforme apresentado abaixo:
@@ -52,7 +53,7 @@ Descobrir a partir da análise dos valores mínimos e máximos dos pacotes de en
 </h4>
 <p> 
     
-    O primeiro grupo de atributos excluídos foram os que se tratavam de resultados estatísticos a partir de dados mínimos e máximos, como por exemplo cálculo de desvio padrão, média e variância. 
+- O primeiro grupo de atributos excluídos foram os que se tratavam de resultados estatísticos calculados a partir de atributos originais de valores mínimos e máximos, ou seja, os atributos referentes ao cálculo de desvio padrão, média e variância. 
     
 </p>  
   
