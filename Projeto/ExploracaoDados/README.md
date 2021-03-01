@@ -26,7 +26,7 @@ Descrever ........
     
 - 85 atributos estruturam a tabela que contém 141.530 registros.
 
-- 5 são textuais e 80 numéricos, conforme apresentado abaixo:
+- 5 são textuais e 80 numéricos, conforme apresentado na tabela da seção 4. 
 
     
 </p>
@@ -43,6 +43,8 @@ Descobrir a partir da análise dos valores mínimos e máximos dos pacotes de en
 <h4>
 4. Maneira de rotulação do dataset
 </h4>
+
+Os rótulos dos atributos do dataset obtido foram colocados na tabela abaixo, juntamente com a identificação do tipo de dados (textual e numérico) e uma descrição sobre o que os dados se referem. 
 
 <table class="tg">
 <thead>
