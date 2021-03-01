@@ -24,9 +24,9 @@ Descrever ........
 
 <p>  
     
-- 85 atributos estruturam a tabela que contém 141.530 registros.
+- 85 atributos compõem a tabela obitida, a qual contém 141.530 registros.
 
-- 5 são textuais e 80 numéricos, conforme apresentado na tabela da seção 4. 
+- 6 atributos são textuais e 79 atributos são numéricos, conforme apresentado na tabela da seção 4. 
 
     
 </p>
@@ -36,7 +36,7 @@ Descrever ........
 </h4>
 <p> 
 
-Descobrir a partir da análise dos valores mínimos e máximos dos pacotes de entrada e saída
+Tentar identificar a partir dos dados de fluxos de envio e recebimentos de pacotes a existência de anomalias maliciosas no conteúdo do fluxo.
 </p>
   
 
