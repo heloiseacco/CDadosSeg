@@ -573,8 +573,8 @@ Os rótulos dos atributos do dataset obtido foram colocados na tabela abaixo, ju
 5. Colunas/atributos a serem mantidos e removidos. Por quê?
 </h4>
 <p> 
-    
-- O primeiro grupo de atributos excluídos foram os que se tratavam de resultados estatísticos calculados a partir de atributos originais de valores mínimos e máximos, ou seja, os atributos referentes ao cálculo de desvio padrão, média e variância. 
+ 
+  O primeiro grupo indicado de atributos indicado para exclusão são os que se tratam de resultados estatísticos calculados a partir de atributos originais de valores mínimos e máximos, ou seja, os atributos referentes ao cálculo de desvio padrão, média e variância. Ao todo são 17 atributos com essa característica, sendo os IDs: 15, 16, 19, 20, 23, 24, 28, 29, 33, 34, 47, 48, 49, 76, 77, 80, 81.
     
 </p>  
   
