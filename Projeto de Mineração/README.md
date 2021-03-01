@@ -4,7 +4,7 @@
 
 <h4 align="center">
   Heloise Acco Tives - Matrícula: 202000144019 <br />
-  Roberta Samistraro Tomigian -   
+  Roberta Samistraro Tomigian -  GRR - 20171631
   <br />
   Projeto de Mineração de Dados
 </h4>
