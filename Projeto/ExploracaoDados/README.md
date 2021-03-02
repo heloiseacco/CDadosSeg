@@ -587,7 +587,7 @@ Como o cojunto de dados é muito grande e diferentes análises podem ser feitas,
  São indicados para serem analisados em grupos os seguintes atributos:
  
  - Portas e protocolos. Ao todo são 5 atributos com essa característica, sendo os IDs: 2, 3, 4, 5 e 6.
- - Tempo de fluxos, envio e recebimento de pacotes. Ao todo são 7 atributos com essa característica, sendo os IDs: 25, 26, 27, 30, 31, 3, 35 e 36.
+ - Tempo de fluxos, envio e recebimento de pacotes. Ao todo são 7 atributos com essa característica, sendo os IDs: 25, 26, 27, 30, 31, 32, 35 e 36.
  - Flags TCP. Ao todo são 8 atributos com essa característica, sendo os IDs: 50, 51, 52, 53, 54 ,55, 56 e 57.
  - Taxas de envio e tamanho de massa enviada. Ao todo são 9 atributos com essa característica, sendo os IDs: 59, 60, 61, 62, 63, 64, 65, 66 e 67.
  - Duração dos fluxos, volume de bytes, volume de pacotes, tamanhos mínimos e máximos de cada pacote. Ao todo são 11 atributos com essa característica, sendo os IDs: 8, 9, 10, 11, 12, 13, 14, 17, 18, 21 e 22.
