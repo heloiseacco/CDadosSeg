@@ -574,11 +574,23 @@ Os rótulos dos atributos do dataset obtido foram colocados na tabela abaixo, ju
 </h4>
 <p> 
  
-  São indicados para serem removidos os seguinteos grupos de atributos:
+  São indicados para serem removidos os seguintes grupos de atributos:
   
-  - Atributos exclusivos dos registros. Ao todo são 2atributos com essa característica, sendo os IDs: 1 e 7.
+  - Atributos exclusivos dos registros. Ao todo são 3 atributos com essa característica, sendo os IDs: 1, 7 e 58.
   - Atributos indicado para exclusão são os que se tratam de resultados estatísticos calculados a partir de atributos originais de valores mínimos e máximos, ou seja, os atributos referentes ao cálculo de desvio padrão, média e variância. Ao todo são 17 atributos com essa característica, sendo os IDs: 15, 16, 19, 20, 23, 24, 28, 29, 33, 34, 47, 48, 49, 76, 77, 80, 81.
   - Atributos com registros de subfluxos e tempo de inatividade. Ao todo são 8 atributos com essa característica, sendo os IDs: 68, 69, 70, 71, 78, 79, 82 e 83.
+
+Como o cojunto de dados é muito grande e diferentes análises podem ser feitas, os atributos restantes devem ser agrupados por similaridade para análise, junto com um conjutno fixo de atributos. 
+
+ São indicados para serem mantidos de maneira fixa os atributos: 84 e 85, pois tratam-se de rótulos xxxxxxxx.
+ 
+ São indicados para serem analisados em grupos os seguintes atributos:
+ 
+ - Portas e protocolos. Ao todo são 5 atributos com essa característica, sendo os IDs: 2, 3, 4, 5 e 6.
+ - Tempo de fluxos, envio e recebimento de pacotes. Ao todo são 7 atributos com essa característica, sendo os IDs: 25, 26, 27, 30, 31, 3, 35 e 36.
+ - Flags TCP. Ao todo são 8 atributos com essa característica, sendo os IDs: 50, 51, 52, 53, 54 ,55, 56 e 57.
+ - Taxas de envio e tamanho de massa enviada. Ao todo são 9 atributos com essa característica, sendo os IDs: 59, 60, 61, 62, 63, 64, 65, 66 e 67.
+ - Duração dos fluxos, volume de bytes, volume de pacotes, tamanhos mínimos e máximos de cada pacote. Ao todo são 11 atributos com essa característica, sendo os IDs: 8, 9, 10, 11, 12, 13, 14, 17, 18, 21 e 22.
     
 </p>  
   
