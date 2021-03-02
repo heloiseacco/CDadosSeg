@@ -14,8 +14,8 @@
 </h4>
 
 <p>    
-https://www.unb.ca/cic/datasets/darknet2020.html <br />
-Descrever ........
+
+O conjunto de dados obtido trata-se de um conjunto de dados darknet completo cobrindo o tráfego Tor e VPN, que está disponibilizado publicamente no link: https://www.unb.ca/cic/datasets/darknet2020.html <br />
 </p>
 
 <h4>
@@ -36,7 +36,7 @@ Descrever ........
 </h4>
 <p> 
 
-Tentar identificar a partir dos dados de fluxos de envio e recebimentos de pacotes a existência de anomalias maliciosas no conteúdo do fluxo.
+Tentar identificar, a partir da análise do tráfego de darknet, padrão de malwares ou atividades maliciosas.
 </p>
   
 
@@ -582,7 +582,7 @@ Os rótulos dos atributos do dataset obtido foram colocados na tabela abaixo, ju
 
 Como o cojunto de dados é muito grande e diferentes análises podem ser feitas, os atributos restantes devem ser agrupados por similaridade para análise, junto com um conjutno fixo de atributos. 
 
- São indicados para serem mantidos de maneira fixa os atributos: 84 e 85, pois tratam-se de rótulos xxxxxxxx.
+ São indicados para serem mantidos de maneira fixa os atributos: 84 e 85. O atributo 84 trata-se de rótulo existente no conjunto de dados para separar tráfego TOR e VPN. O atributo 85 trata-se da identificação da categoria de tráfego, como por exemplo chat, email, voip, entre outros. 
  
  São indicados para serem analisados em grupos os seguintes atributos:
  
