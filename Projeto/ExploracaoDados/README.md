@@ -36,7 +36,7 @@ O conjunto de dados obtido trata-se de um conjunto de dados darknet completo cob
 </h4>
 <p> 
 
-Tentar identificar, a partir da análise do tráfego de darknet, padrão de malwares ou atividades maliciosas.
+Tentar identificar, a partir dos dados de tráfego de darknet, padrão de malwares ou atividades maliciosas.
 </p>
   
 
@@ -577,15 +577,12 @@ Os rótulos dos atributos do dataset obtido foram colocados na tabela abaixo, ju
   São indicados para serem removidos os seguintes grupos de atributos:
   
   - Atributos exclusivos dos registros. Ao todo são 3 atributos com essa característica, sendo os IDs: 1, 7 e 58.
-  - Atributos indicado para exclusão são os que se tratam de resultados estatísticos calculados a partir de atributos originais de valores mínimos e máximos, ou seja, os atributos referentes ao cálculo de desvio padrão, média e variância. Ao todo são 17 atributos com essa característica, sendo os IDs: 15, 16, 19, 20, 23, 24, 28, 29, 33, 34, 47, 48, 49, 76, 77, 80, 81.
-  - Atributos com registros de subfluxos e tempo de inatividade. Ao todo são 8 atributos com essa característica, sendo os IDs: 68, 69, 70, 71, 78, 79, 82 e 83.
+  - Atributos que se tratam de resultados estatísticos calculados a partir de atributos originais de valores mínimos e máximos, ou seja, os atributos referentes ao cálculo de desvio padrão, média e variância. Ao todo são 17 atributos com essa característica, sendo os IDs: 15, 16, 19, 20, 23, 24, 28, 29, 33, 34, 47, 48, 49, 76, 77, 80, 81.
+  - Atributos com todos os registros com valor 0. Ao todo são 8 atributos com essa característica, sendo os IDs: .
 
-Como o cojunto de dados é muito grande e diferentes análises podem ser feitas, os atributos restantes devem ser agrupados por similaridade para análise, junto com um conjutno fixo de atributos. 
-
- São indicados para serem mantidos de maneira fixa os atributos: 84 e 85. O atributo 84 trata-se de rótulo existente no conjunto de dados para separar tráfego TOR e VPN. O atributo 85 trata-se da identificação da categoria de tráfego, como por exemplo chat, email, voip, entre outros. 
+ Devem ser mantidos em qualquer análise os atributos: 84 e 85. O atributo 84 trata-se do rótulo existente no conjunto de dados para separar tráfego TOR e VPN. O atributo 85 trata-se da identificação da categoria de tráfego, como por exemplo chat, email, voip, entre outros. 
  
- São indicados para serem analisados em grupos os seguintes atributos:
- 
+ Como o cojunto de dados é muito grande e diferentes análises podem ser feitas, os atributos restantes podem ser agrupados por similaridade para análise. Caso isso seja desejado os seguintes grupos foram pré-identificados:
  - Portas e protocolos. Ao todo são 5 atributos com essa característica, sendo os IDs: 2, 3, 4, 5 e 6.
  - Tempo de fluxos, envio e recebimento de pacotes. Ao todo são 7 atributos com essa característica, sendo os IDs: 25, 26, 27, 30, 31, 32, 35 e 36.
  - Flags TCP. Ao todo são 8 atributos com essa característica, sendo os IDs: 50, 51, 52, 53, 54 ,55, 56 e 57.
