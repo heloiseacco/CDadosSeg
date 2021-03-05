@@ -578,15 +578,15 @@ Os rótulos dos atributos do dataset obtido foram colocados na tabela abaixo, ju
   
   - Atributos exclusivos dos registros. Ao todo são 3 atributos com essa característica, sendo os IDs: 1, 7 e 58.
   - Atributos que se tratam de resultados estatísticos calculados a partir de atributos originais de valores mínimos e máximos, ou seja, os atributos referentes ao cálculo de desvio padrão, média e variância. Ao todo são 17 atributos com essa característica, sendo os IDs: 15, 16, 19, 20, 23, 24, 28, 29, 33, 34, 47, 48, 49, 76, 77, 80, 81.
-  - Atributos com todos os registros com valor 0. Ao todo são 8 atributos com essa característica, sendo os IDs: .
+  - Atributos com todos os registros com valor 0. Ao todo são 13 atributos com essa característica, sendo os IDs: 38, 39, 40, 55, 56, 57, 62, 63, 64, 65, 70, 78, 79.
 
  Devem ser mantidos em qualquer análise os atributos: 84 e 85. O atributo 84 trata-se do rótulo existente no conjunto de dados para separar tráfego TOR e VPN. O atributo 85 trata-se da identificação da categoria de tráfego, como por exemplo chat, email, voip, entre outros. 
  
  Como o cojunto de dados é muito grande e diferentes análises podem ser feitas, os atributos restantes podem ser agrupados por similaridade para análise. Caso isso seja desejado os seguintes grupos foram pré-identificados:
  - Portas e protocolos. Ao todo são 5 atributos com essa característica, sendo os IDs: 2, 3, 4, 5 e 6.
  - Tempo de fluxos, envio e recebimento de pacotes. Ao todo são 7 atributos com essa característica, sendo os IDs: 25, 26, 27, 30, 31, 32, 35 e 36.
- - Flags TCP. Ao todo são 8 atributos com essa característica, sendo os IDs: 50, 51, 52, 53, 54 ,55, 56 e 57.
- - Taxas de envio e tamanho de massa enviada. Ao todo são 9 atributos com essa característica, sendo os IDs: 59, 60, 61, 62, 63, 64, 65, 66 e 67.
+ - Flags TCP. Ao todo são 8 atributos com essa característica, sendo os IDs: 50, 51, 52, 53 e54.
+ - Taxas de envio e tamanho de massa enviada. Ao todo são 9 atributos com essa característica, sendo os IDs: 59, 60, 61, 66 e 67.
  - Duração dos fluxos, volume de bytes, volume de pacotes, tamanhos mínimos e máximos de cada pacote. Ao todo são 11 atributos com essa característica, sendo os IDs: 8, 9, 10, 11, 12, 13, 14, 17, 18, 21 e 22.
     
 </p>  
